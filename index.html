@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>のり - のりpedia</title>
+<meta name="description" content="のりは、日本の個人開発者（アプリ開発者）。日常の「めんどくさい」を解消するためのWebアプリ・PWAを多数開発・公開している。">
+<link rel="canonical" href="https://nori205.github.io/noripedia/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="のりpedia">
+<meta property="og:title" content="のり - のりpedia">
+<meta property="og:description" content="日常の「めんどくさい」から生まれたWebアプリ・PWAを多数開発・公開している個人開発者「のり」の紹介ページ。">
+<meta property="og:url" content="https://nori205.github.io/noripedia/">
+<meta property="og:image" content="https://nori205.github.io/noripedia/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="のり - のりpedia">
+<meta name="twitter:description" content="日常の「めんどくさい」から生まれたWebアプリ・PWAを多数開発・公開している個人開発者「のり」の紹介ページ。">
+<meta name="twitter:image" content="https://nori205.github.io/noripedia/icon.png">
+<link rel="icon" type="image/png" href="icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "のり - のりpedia",
+  "url": "https://nori205.github.io/noripedia/",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://nori205.github.io/noripedia/#person",
+    "name": "のり",
+    "alternateName": ["nori205", "nori072505"],
+    "url": "https://nori205.github.io/noripedia/",
+    "image": "https://nori205.github.io/noripedia/icon.png",
+    "jobTitle": "個人開発者（アプリ開発者）",
+    "description": "日常の「めんどくさい」を解消するためのWebアプリ・PWAを多数開発・公開している個人開発者。",
+    "knowsAbout": ["Webアプリ開発", "PWA開発", "GitHub Pages"],
+    "sameAs": ["https://nori205.github.io/apps/", "https://note.com/nori072505", "https://github.com/nori205"]
+    ,"knowsLanguage": { "@type": "Language", "name": "日本語", "alternateName": "ja" }
+  }
+}
+</script>
+<style>
+:root{
+  --link:#0645ad; --link-visited:#0b0080; --border:#a2a9b1; --bg-soft:#f8f9fa;
+  --text:#202122; --accent:#4a5568;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN","Noto Sans JP",Arial,sans-serif;color:var(--text);background:#fff;font-size:14px;line-height:1.85}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a.ext::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;background:linear-gradient(45deg,transparent 46%,var(--link) 46%,var(--link) 54%,transparent 54%),linear-gradient(-45deg,transparent 60%,var(--link) 60%);opacity:.7}
+
+/* ヘッダー */
+.site-head{border-bottom:1px solid var(--border);background:#fff}
+.site-head .in{max-width:1000px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px}
+.site-head img{width:34px;height:34px;border-radius:50%;object-fit:cover}
+.site-head .wordmark{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:22px;letter-spacing:.02em}
+.site-head .wordmark b{font-weight:600}
+.site-head .tag{font-size:11px;color:#54595d;margin-left:2px}
+.site-head .home{margin-left:auto;font-size:12px}
+
+/* 本文レイアウト */
+.page{max-width:1000px;margin:0 auto;padding:18px 16px 60px}
+h1.firstHeading{font-family:"Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-weight:400;font-size:28px;border-bottom:1px solid var(--border);padding-bottom:4px;margin-bottom:6px}
+.siteSub{font-size:12px;color:#54595d;margin-bottom:14px}
+h2{font-family:"Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-weight:400;font-size:21px;border-bottom:1px solid var(--border);padding-bottom:3px;margin:34px 0 12px}
+h3{font-size:15.5px;font-weight:700;margin:22px 0 8px}
+p{margin-bottom:12px}
+ul,ol{margin:0 0 12px 1.8em}
+sup.ref{font-size:11px}
+sup.ref a{white-space:nowrap}
+
+/* インフォボックス */
+.infobox{float:right;width:280px;border:1px solid var(--border);background:var(--bg-soft);font-size:12.5px;line-height:1.6;margin:0 0 16px 20px;padding:4px}
+.infobox caption,.infobox .ib-title{text-align:center;font-weight:700;font-size:14px;padding:6px 4px}
+.infobox img.portrait{display:block;width:100%;height:auto}
+.infobox table{width:100%;border-collapse:collapse}
+.infobox th{width:88px;text-align:left;vertical-align:top;padding:4px 8px 4px 6px;font-weight:700}
+.infobox td{padding:4px 4px}
+@media(max-width:640px){.infobox{float:none;width:100%;margin:0 0 18px}}
+
+/* 目次 */
+.toc{display:inline-block;border:1px solid var(--border);background:var(--bg-soft);padding:12px 22px 12px 16px;font-size:13px;margin-bottom:16px}
+.toc .toctitle{font-weight:700;text-align:center;margin-bottom:6px}
+.toc ol{margin:0 0 0 1.4em;list-style:none}
+.toc li{margin:2px 0}
+.toc .tocnum{color:var(--text);margin-right:6px}
+
+/* 表 */
+.tablewrap{overflow-x:auto;margin:0 0 16px}
+.wikitable{border-collapse:collapse;background:var(--bg-soft);border:1px solid var(--border);font-size:13px;min-width:560px}
+.wikitable th,.wikitable td{border:1px solid var(--border);padding:5px 10px;vertical-align:top;text-align:left}
+.wikitable th{background:#eaecf0}
+.cite-needed{font-size:11px;color:#54595d;vertical-align:super;white-space:nowrap}
+
+/* 脚注・外部リンク */
+.reflist{font-size:12.5px;line-height:1.7}
+.reflist ol{margin-left:1.8em}
+.reflist li{margin-bottom:4px}
+
+/* フッター */
+.site-foot{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:40px}
+.site-foot .in{max-width:1000px;margin:0 auto;padding:18px 16px 30px;font-size:12px;color:#54595d}
+.site-foot .disclaimer{margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="in">
+    <img src="icon.png" alt="のり">
+    <span class="wordmark"><b>のりpedia</b></span>
+    <span class="tag">のり百科事典</span>
+    <a class="home" href="https://nori205.github.io/noripedia/">トップ</a>
+  </div>
+</header>
+
+<main class="page">
+
+  <h1 class="firstHeading">のり</h1>
+  <div class="siteSub">出典: 自由に読める百科事典風ページ「のりpedia」</div>
+
+  <aside class="infobox">
+    <div class="ib-title">のり</div>
+    <img class="portrait" src="icon.png" alt="のりの肖像（アバター）">
+    <table>
+      <tr><th>別名</th><td>nori205（GitHub）</td></tr>
+      <tr><th>年代</th><td>50代<sup class="ref"><a href="#note2">[2]</a></sup></td></tr>
+      <tr><th>職業</th><td>個人開発者（アプリ開発者）</td></tr>
+      <tr><th>発信活動</th><td>5年以上<span class="cite-needed">[要出典]</span></td></tr>
+      <tr><th>アプリ開発</th><td>2026年2月ごろ - （約6か月）<span class="cite-needed">[要出典]</span></td></tr>
+      <tr><th>主な作品</th><td>Clipo、はかるもん、あるもん、ぶっこみメモ</td></tr>
+      <tr><th>公式サイト</th><td><a class="ext" href="https://nori205.github.io/apps/">nori205.github.io/apps</a></td></tr>
+    </table>
+  </aside>
+
+  <p>のりは、日本の個人開発者（アプリ開発者）。note・ブログでの発信を5年以上前から続けており<span class="cite-needed">[要出典]</span>、2026年2月ごろからはアプリ開発も始めた<span class="cite-needed">[要出典]</span>。以降半年ほどの間に、販売用・配布用・自分用を合わせて30個以上のWebアプリ・PWAを日常生活の「めんどくさい」を解消する目的で制作している<span class="cite-needed">[要出典]</span>。作品はいずれもGitHub Pages上で無料公開されており、単一のHTMLファイルで実装を完結させる手法を一貫して用いている<sup class="ref"><a href="#note1">[1]</a></sup>。noteでは、2026年8月時点の自己紹介欄で「アプリ開発20個」の実績と、note記事の販売実績220部以上を挙げている<sup class="ref"><a href="#note2">[2]</a></sup>。</p>
+
+  <nav class="toc">
+    <div class="toctitle">目次</div>
+    <ol>
+      <li><span class="tocnum">1</span><a href="#keireki">経歴</a></li>
+      <li><span class="tocnum">2</span><a href="#katsudou">活動</a>
+        <ol>
+          <li><span class="tocnum">2.1</span><a href="#products">プロダクト・アプリ</a></li>
+          <li><span class="tocnum">2.2</span><a href="#hasshin">発信活動</a></li>
+        </ol>
+      </li>
+      <li><span class="tocnum">3</span><a href="#jinbutsu">人物</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="keireki">経歴</h2>
+  <p>note・ブログでの発信を5年以上前から続けている<span class="cite-needed">[要出典]</span>。</p>
+  <p>2026年2月ごろ、アプリ開発を始めた<span class="cite-needed">[要出典]</span>。以降半年ほどの間に、日常生活の中で感じた不便を解消するためのWebアプリ・PWAを継続的に開発し、販売用・配布用・自分用を合わせて30個以上をGitHub Pages上などで公開している<span class="cite-needed">[要出典]</span>。</p>
+
+  <h2 id="katsudou">活動</h2>
+  <p>単一のHTMLファイルで完結する小規模なWebアプリ・PWAを継続的に開発し、GitHub Pagesで無料公開する活動を行っている<sup class="ref"><a href="#note1">[1]</a></sup>。</p>
+
+  <h3 id="products">プロダクト・アプリ</h3>
+  <div class="tablewrap">
+  <table class="wikitable">
+    <tr><th style="width:180px">名称</th><th style="width:110px">種別</th><th>概要</th></tr>
+    <tr><td><a class="ext" href="https://nori205.github.io/clipo/">Clipo（クリポ）</a></td><td>PWA</td><td>チケットやクーポンをスクリーンショットで保存し、レジ前で素早く表示できる無料アプリ<sup class="ref"><a href="#note1">[1]</a></sup>。</td></tr>
+    <tr><td><a class="ext" href="https://nori205.github.io/hakarumono/">はかるもん</a></td><td>PWA</td><td>ケーキ型のサイズ違いにあわせて材料の分量を自動換算するアプリ<sup class="ref"><a href="#note3">[3]</a></sup>。</td></tr>
+    <tr><td><a class="ext" href="https://nori205.github.io/recipe-akasafu/">あるもん</a></td><td>PWA</td><td>米粉パンのレシピを、手元にあるドライイースト量などにあわせて自動スケール計算するアプリ<sup class="ref"><a href="#note4">[4]</a></sup>。</td></tr>
+    <tr><td><a class="ext" href="https://nori205.github.io/bukkomi-memo/">ぶっこみメモ</a></td><td>PWA</td><td>思いついたことを何でも放り込んで後で見返せるメモアプリ<sup class="ref"><a href="#note5">[5]</a></sup>。</td></tr>
+  </table>
+  </div>
+
+  <h3 id="hasshin">発信活動</h3>
+  <p>noteで、プログラミング未経験者を含む完全初心者向けにClaude Codeの使い方を解説するマガジンを運営している<sup class="ref"><a href="#note2">[2]</a></sup>。これとは別に、スマホの乗り換え相談業も行っており、有料相談の実績は100件以上に上る<sup class="ref"><a href="#note2">[2]</a></sup>。</p>
+
+  <h2 id="jinbutsu">人物</h2>
+  <ul>
+    <li>信条・タグラインとして「とりあえずやってみる」を挙げている<span class="cite-needed">[要出典]</span>。</li>
+  </ul>
+
+  <h2 id="kyakuchuu">脚注</h2>
+  <div class="reflist">
+    <ol>
+      <li id="note1">「<a class="ext" href="https://nori205.github.io/apps/">わがままから生まれたアプリたち</a>」のり作品一覧ページ。2026年8月4日閲覧。</li>
+      <li id="note2">「<a class="ext" href="https://note.com/nori072505">のり（nori072505）</a>」note プロフィール。2026年8月4日閲覧。</li>
+      <li id="note3">「<a class="ext" href="https://nori205.github.io/hakarumono/">はかるもん</a>」。2026年8月4日閲覧。</li>
+      <li id="note4">「<a class="ext" href="https://nori205.github.io/recipe-akasafu/">あるもん</a>」。2026年8月4日閲覧。</li>
+      <li id="note5">「<a class="ext" href="https://nori205.github.io/bukkomi-memo/">ぶっこみメモ</a>」。2026年8月4日閲覧。</li>
+    </ol>
+  </div>
+
+  <h2 id="links">外部リンク</h2>
+  <ul>
+    <li><a class="ext" href="https://nori205.github.io/apps/">のり作品一覧（公式サイト）</a></li>
+    <li><a class="ext" href="https://note.com/nori072505">note（nori072505）</a></li>
+    <li><a class="ext" href="https://github.com/nori205">GitHub（nori205）</a></li>
+  </ul>
+
+</main>
+
+<footer class="site-foot">
+  <div class="in">
+    <p class="disclaimer">このページはWikipediaではありません。のり本人が運営する百科事典「風」のプロフィールページ（のりpedia）です。ウィキメディア財団とは一切関係ありません。</p>
+    <p>&copy; 2026 のり ／ <a href="https://nori205.github.io/apps/">作品一覧</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
