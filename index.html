@@ -72,7 +72,8 @@ sup.ref a{white-space:nowrap}
 /* インフォボックス */
 .infobox{float:right;width:280px;border:1px solid var(--border);background:var(--bg-soft);font-size:12.5px;line-height:1.6;margin:0 0 16px 20px;padding:4px}
 .infobox caption,.infobox .ib-title{text-align:center;font-weight:700;font-size:14px;padding:6px 4px}
-.infobox img.portrait{display:block;width:100%;height:auto}
+.infobox .portrait-wrap{width:100%;aspect-ratio:1/0.78;overflow:hidden}
+.infobox img.portrait{display:block;width:100%;height:auto;transform:scale(1.22);transform-origin:50% 12%}
 .infobox table{width:100%;border-collapse:collapse}
 .infobox th{width:88px;text-align:left;vertical-align:top;padding:4px 8px 4px 6px;font-weight:700}
 .infobox td{padding:4px 4px}
@@ -121,7 +122,7 @@ sup.ref a{white-space:nowrap}
 
   <aside class="infobox">
     <div class="ib-title">のり</div>
-    <img class="portrait" src="icon.png" alt="のりの肖像（アバター）">
+    <div class="portrait-wrap"><img class="portrait" src="icon.png" alt="のりの肖像（アバター）"></div>
     <table>
       <tr><th>別名</th><td>nori205（GitHub）</td></tr>
       <tr><th>年代</th><td>50代<sup class="ref"><a href="#note2">[2]</a></sup></td></tr>
